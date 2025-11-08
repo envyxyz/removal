@@ -1,33 +1,46 @@
 ## removal.css
 
-> the better [Krunker.io](krunker.io) default ui
+> [krunker.io](krunker.io) ui made better
 
 ## Features
 
-- removes ads
-- boosts fps
-- cleaner ui
+- removes ads and visual clutter
+- improves FPS (less rendering load)
+- gives the UI a clean look
 
-## Use
+## Installation
 
-- copy & paste the following line of code to the top of your `main_custom.css` css file
+Add the following line to the **very top** of your `main_custom.css`:
 
-```sh
-@import url(https://envyxyz.github.io/removal/removal.css);
+```css
+@import url("https://envyxyz.github.io/removal/removal.css");
 ```
 
-![VSC](https://img001.prntscr.com/file/img001/rhVMPs-9S9-bOKLhzEVLFg.png)
+## Screenshots <span style="font-size:12px;font-style:italic;">(Before vs After)<span>
 
-## Screenshots
+#### **Main Menu**
 
-> Menu
-> ![menu](https://img001.prntscr.com/file/img001/2ZfzqaDlS8CdWX1xYMbZqw.png)
+<div align="center">
+<img src="./screenshots/before_mm.png" width="45%"> <img src="./screenshots/after_mm.png" width="45%">
+</div>
 
-> Settings UI
-> ![settings](https://img001.prntscr.com/file/img001/_Yt6EyvhQcqg8JKu5bSNeA.png)
+---
 
-> In-game
-> ![hud](https://img001.prntscr.com/file/img001/2z3EWKTVQP-WYTWwmycXSQ.png)
+#### **Settings**
+
+<div align="center">
+<img src="./screenshots/before_mw.png" width="45%"> <img src="./screenshots/after_mw.png" width="45%">
+</div>
+
+---
+
+#### **In-game UI**
+
+<div align="center">
+<img src="./screenshots/before_ig.png" width="45%"> <img src="./screenshots/after_ig.png" width="45%">
+</div>
+
+---
 
 ## Contact
 

@@ -1,4 +1,14 @@
-/* Updated 08/11/24 */
+/* Updated 08/11/25 */
+
+:root {
+  /* DEFAULT
+  	--div-grey: rgba(108, 108, 108,  .40);
+	--div-black: rgba(20, 20, 20, .75); */
+
+  /* CHANGED */
+  --div-grey: rgb(48 48 48 / 47%);
+  --div-black: rgb(20 20 20 / 21%);
+}
 
 /* Removal */
 
@@ -26,7 +36,10 @@
 .settingsBtn[onclick="openOneTrust()"],
 .menuSocialB,
 #topRightAdHolder,
-.setSugBox2 {
+.setSugBox2,
+.streams-overlay,
+#signupRewardsButton,
+#chatList > div:has(span[onclick*="viewItem("]) {
   display: none !important;
 }
 
@@ -34,7 +47,9 @@
 .button:hover,
 .quickJoin,
 .setHed,
-.sliderVal {
+.sliderVal,
+#menuBtnRanked,
+.settName {
   border: hidden !important;
 }
 
@@ -51,6 +66,88 @@ iframe#bigMFeatVid,
 #cmpLeavInfo,
 #cmpDatBox,
 #cmpStatBox .material-icons,
-#cmpStatBox .material-icons + span {
+#cmpStatBox .material-icons + span,
+#customizeButton span.material-icons,
+#mainLogo {
   display: none !important;
+}
+
+/* tweaks */
+
+#menuClassContainer {
+  bottom: 150px;
+}
+
+#menuClassContainer:hover > #classPreviewCanvas {
+  opacity: 1 !important;
+}
+
+#customizeButton {
+  width: 250px;
+  font-size: 22px !important;
+  padding-bottom: 22px;
+}
+
+#menuClassContainerInner {
+  flex-direction: row-reverse;
+  gap: 15px;
+  position: fixed;
+  bottom: 15px;
+  left: 100px;
+  scale: 0.8;
+}
+
+#menuClassContainerInfo {
+  text-align: left;
+}
+
+#classPreviewCanvas {
+  transform: translate(120px, -70px);
+  opacity: 0 !important;
+}
+
+/* menu window */
+
+#windowHolder.popupWin,
+.setBodH {
+  background-color: #00000036;
+}
+
+#menuWindow,
+.setHed,
+.settingsHeader {
+  background-color: #0a0a0a24 !important;
+  box-shadow: none !important;
+}
+
+#menuWindow::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+#subLogoButtons {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  transform: unset;
+  width: 1200px;
+  right: unset;
+  left: calc(50% - 460px);
+}
+
+#matchInfoHolder {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+  gap: 1em;
+  border: none !important;
+  outline: none !important;
+}
+
+#mapInfoHld {
+  border-top: 2px solid #fff;
+  padding-top: 15px;
+  font-size: 0;
 }
