@@ -151,3 +151,7 @@ iframe#bigMFeatVid,
   padding-top: 15px;
   font-size: 0;
 }
+
+#uiBase.onMenu #chatHolder {
+  bottom: 130px !important;
+}
